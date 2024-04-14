@@ -20,12 +20,18 @@ return {
 
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.indent.indent-blankline-nvim" },
+
   { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
+
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
 
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.note-taking.obsidian-nvim" },
+
   { import = "astrocommunity.editing-support.true-zen-nvim" },
+  { import = "astrocommunity.editing-support.neogen" },
+  { import = "astrocommunity.editing-support.nvim-treesitter-context" },
   {
     "Saecki/crates.nvim",
     event = { "BufRead Cargo.toml" },
