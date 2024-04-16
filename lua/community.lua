@@ -31,7 +31,11 @@ return {
 
   { import = "astrocommunity.editing-support.true-zen-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
+  { import = "astrocommunity.editing-support.vim-visual-multi" },
   { import = "astrocommunity.editing-support.nvim-treesitter-context" },
+  { import = "astrocommunity.editing-support.nvim-context-vt" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+  { import = "astrocommunity.editing-support.undotree" },
   {
     "Saecki/crates.nvim",
     event = { "BufRead Cargo.toml" },
