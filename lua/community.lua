@@ -4,7 +4,6 @@ return {
   { import = "astrocommunity.colorscheme.gruvbox-nvim" },
 
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.cs" },
@@ -24,9 +23,10 @@ return {
   { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
 
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
+  { import = "astrocommunity.lsp.actions-preview-nvim" },
+  { import = "astrocommunity.lsp.delimited-nvim" },
 
   { import = "astrocommunity.completion.copilot-lua" },
-  { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.note-taking.obsidian-nvim" },
 
   { import = "astrocommunity.editing-support.true-zen-nvim" },
@@ -36,6 +36,8 @@ return {
   { import = "astrocommunity.editing-support.nvim-context-vt" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.undotree" },
+
+  { import = "astrocommunity.file-explorer.oil-nvim" },
   {
     "Saecki/crates.nvim",
     event = { "BufRead Cargo.toml" },
