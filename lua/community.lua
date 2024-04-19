@@ -39,6 +39,14 @@ return {
 
   { import = "astrocommunity.file-explorer.oil-nvim" },
   {
+    "ellisonleao/gruvbox.nvim",
+    opts = {
+      overrides = {
+        ContextVt = { fg = "#555555" },
+      },
+    },
+  },
+  {
     "Saecki/crates.nvim",
     event = { "BufRead Cargo.toml" },
     init = function()
