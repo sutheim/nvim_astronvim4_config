@@ -60,6 +60,8 @@ return {
         ["<C-u>"] = { "<C-u>zz", desc = "Half page up and center" },
         ["<C-d>"] = { "<C-d>zz", desc = "Half page down and center" },
 
+        ["gd>"] = { "gdzz", desc = "Show definition and center" },
+
         L = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         H = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
