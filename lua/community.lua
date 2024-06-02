@@ -11,6 +11,7 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.wgsl" },
+  { import = "astrocommunity.pack.zig" },
 
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.mini-move" },
