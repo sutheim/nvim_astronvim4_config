@@ -49,48 +49,6 @@ return {
     },
   },
   {
-    "Saecki/crates.nvim",
-    event = { "BufRead Cargo.toml" },
-    init = function()
-      vim.api.nvim_create_autocmd("BufRead", {
-        group = vim.api.nvim_create_augroup("CmpSourceCargo", { clear = true }),
-        pattern = "Cargo.toml",
-        callback = function()
-          require("cmp").setup.buffer { sources = { { name = "crates" } } }
-          local utils = require "astronvim.utils"
-          utils.set_mappings {
-            n = {
-              ["<leader>r"] = { name = " Rust Tools" },
-              ["<leader>rf"] = {
-                function()
-                  for i = 1, 2, 1 do
-                    require("crates").show_features_popup()
-                  end
-                end,
-                desc = "Crate Show Features",
-              },
-              ["<leader>rv"] = {
-                function()
-                  for i = 1, 2, 1 do
-                    require("crates").show_versions_popup()
-                  end
-                end,
-                desc = "Crate Show Versions",
-              },
-            },
-          }
-          require "crates"
-        end,
-      })
-    end,
-    opts = {
-      null_ls = {
-        enabled = true,
-        name = "crates.nvim",
-      },
-    },
-  },
-  {
     "gbprod/yanky.nvim",
     event = "UIEnter",
     dependencies = { { "kkharji/sqlite.lua", enabled = not jit.os:find "Windows" } },
@@ -111,7 +69,7 @@ return {
     end,
     keys = {
       {
-        "<leader>p",
+        "<leader>P",
         function() require("telescope").extensions.yank_history.yank_history {} end,
         desc = "Open Yank History",
       },

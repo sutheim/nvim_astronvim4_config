@@ -66,6 +66,24 @@ return {
         H = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
         ["<Leader>b"] = { desc = "Buffers" },
+
+        ["<leader>r"] = { name = " Rust Tools" },
+        ["<leader>rf"] = {
+          function()
+            for _ = 1, 2, 1 do
+              require("crates").show_features_popup()
+            end
+          end,
+          desc = "Crate Show Features",
+        },
+        ["<leader>rv"] = {
+          function()
+            for _ = 1, 2, 1 do
+              require("crates").show_versions_popup()
+            end
+          end,
+          desc = "Crate Show Versions",
+        },
       },
       v = {
         ["<C-g>"] = {
