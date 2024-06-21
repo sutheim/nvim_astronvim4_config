@@ -57,8 +57,8 @@ return {
         ["N"] = { "Nzz", desc = "Next and center" },
         ["n"] = { "nzz", desc = "Next and center" },
 
-        ["<C-k>"] = { "yyP", desc = "Duplicate line up" },
-        ["<C-j>"] = { "yyp", desc = "Duplicate line down" },
+        ["<C-K>"] = { "yyP", desc = "Duplicate line up" },
+        ["<C-J>"] = { "yyp", desc = "Duplicate line down" },
 
         ["<C-u>"] = { "<C-u>zz", desc = "Half page up and center" },
         ["<C-d>"] = { "<C-d>zz", desc = "Half page down and center" },
