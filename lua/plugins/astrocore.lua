@@ -40,6 +40,8 @@ return {
     mappings = {
       -- first key is the mode
       n = {
+        ["<leader>hf"] = {  "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'fd', '--no-ignore', '--follow' }})<cr>" },
+
         ["<C-f>"] = { "<cmd>Telescope fd<CR>", desc = "Activates Telescope find files" },
         ["<C-g>"] = {
           function() require("telescope").extensions.live_grep_args.live_grep_args() end,
@@ -84,6 +86,7 @@ return {
           end,
           desc = "Crate Show Versions",
         },
+        ["<C-Q>"] = false,
       },
       v = {
         ["<C-g>"] = {
@@ -93,10 +96,11 @@ return {
       },
       i = {
         ["<C-k>"] = { vim.lsp.buf.signature_help },
+        ["<C-Q>"] = false,
       },
       t = {
         -- setting a mapping to false will disable it
-        -- ["<esc>"] = false,
+        ["<C-Q>"] = false,
       },
     },
     o = {
