@@ -14,7 +14,7 @@ return {
           }
         end,
         mode = { "n" },
-        desc = { "Hint character forward" },
+        desc = "Hint character forward",
         remap = true,
       },
       {
@@ -26,7 +26,7 @@ return {
           }
         end,
         mode = { "n" },
-        desc = { "Hint character back" },
+        desc = "Hint character back",
         remap = true,
       },
       {
@@ -39,7 +39,7 @@ return {
           }
         end,
         mode = { "n" },
-        desc = { "Hint character forward" },
+        desc = "Hint character forward",
         remap = true,
       },
       {
@@ -52,7 +52,7 @@ return {
           }
         end,
         mode = { "n" },
-        desc = { "Hint character back" },
+        desc = "Hint character back",
         remap = true,
       },
       {
@@ -62,22 +62,10 @@ return {
         desc = "Hop hint words",
       },
       {
-        "<S-j>",
-        function() require("hop").hint_lines() end,
-        mode = { "n" },
-        desc = "Hop hint lines",
-      },
-      {
         "s",
         function() require("hop").hint_words { extend_visual = true } end,
         mode = { "v" },
         desc = "Hop hint words",
-      },
-      {
-        "<S-j>",
-        function() require("hop").hint_lines { extend_visual = true } end,
-        mode = { "v" },
-        desc = "Hop hint lines",
       },
     },
   },
