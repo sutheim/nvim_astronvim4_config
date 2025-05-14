@@ -52,7 +52,6 @@ return {
           desc = "Activates Telescope live grep args under cursor",
         },
         ["<C-t>"] = { "<cmd>TodoTelescope<CR>", desc = "Activates Telescope Todo" },
-        ["<C-z>"] = { "<cmd>Telescope zoxide list<cr>", desc = "Open zoxide Telescope" },
 
         ["<leader>u"] = { vim.cmd.UndotreeToggle, desc = "Toggle UndoTree Window" },
 
