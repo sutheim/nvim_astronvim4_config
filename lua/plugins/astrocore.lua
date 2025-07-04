@@ -85,6 +85,18 @@ return {
           end,
           desc = "Crate Show Versions",
         },
+        ["<leader>rd"] = {
+          vim.cmd.RustLsp('relatedDiagnostics'),
+          desc = "Show related diagnostics",
+        },
+        ["<leader>rc"] = {
+          vim.cmd.RustLsp('openCargo'),
+          desc = "Open Cargo.toml for current crate",
+        },
+        ["<leader>rp"] = {
+          vim.cmd.RustLsp('parentModule'),
+          desc = "Open parent module",
+        },
         ["<C-Q>"] = false,
       },
       v = {
