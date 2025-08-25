@@ -40,6 +40,7 @@ return {
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.undotree" },
   { import = "astrocommunity.editing-support.yanky-nvim" },
+  { import = "astrocommunity.editing-support.copilotchat-nvim" },
 
   -- { import = "astrocommunity.file-explorer.oil-nvim" },
   {
