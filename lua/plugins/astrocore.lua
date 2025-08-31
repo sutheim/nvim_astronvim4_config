@@ -40,6 +40,10 @@ return {
     mappings = {
       -- first key is the mode
       n = {
+        ["<C-a>"] = { "<cmd>CodeCompanionActions<cr>", desc = "Code Companion Actions", silent = true, noremap = true },
+        ["<leader>a"] = { "<cmd>CodeCompanionChat<cr>", desc = "Code Companion Chat", silent = true, noremap = true },
+        ["<ga>"] = { "<cmd>CodeCompanionAdd<cr>", desc = "Code Companion Add", silent = true, noremap = true },
+
         ["<leader>hf"] = {  "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'fd', '--no-ignore', '--follow' }})<cr>" },
 
         ["<C-f>"] = { "<cmd>Telescope fd<CR>", desc = "Activates Telescope find files" },
