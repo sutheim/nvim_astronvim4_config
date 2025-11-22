@@ -124,11 +124,5 @@ return {
         ["<C-Q>"] = false,
       },
     },
-    o = {
-      shell = "nu",
-      shellcmdflag = "-c",
-      shellquote = "",
-      shellxquote = "",
-    },
   },
 }
