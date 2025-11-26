@@ -1,7 +1,0 @@
-{
-    "bevy_test": {
-        "prefix": "bevy",
-        "body": ["#![bevy(${1})]"],
-        "description": "#![bevy(…)]"
-    }
-}

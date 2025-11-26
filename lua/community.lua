@@ -1,8 +1,11 @@
+-- AstroCommunity: import any community modules here
+-- We import this file in `lazy_setup.lua` before the `plugins/` folder.
+-- This guarantees that the specs are processed before any user plugins.
+
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.colorscheme.gruvbox-nvim" },
-
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.json" },
   -- { import = "astrocommunity.pack.cmake" },
@@ -24,11 +27,11 @@ return {
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.indent.indent-blankline-nvim" },
 
-  { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
+  -- { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
 
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.lsp.actions-preview-nvim" },
-  { import = "astrocommunity.lsp.delimited-nvim" },
+  -- { import = "astrocommunity.lsp.delimited-nvim" },
 
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.note-taking.obsidian-nvim" },
@@ -45,12 +48,12 @@ return {
   { import = "astrocommunity.editing-support.codecompanion-nvim" },
 
   -- { import = "astrocommunity.file-explorer.oil-nvim" },
-  {
-    "ellisonleao/gruvbox.nvim",
-    opts = {
-      overrides = {
-        ContextVt = { fg = "#555555" },
-      },
-    },
-  },
+  -- {
+  --   "ellisonleao/gruvbox.nvim",
+  --   opts = {
+  --     overrides = {
+  --       ContextVt = { fg = "#555555" },
+  --     },
+  --   },
+  -- },
 }
